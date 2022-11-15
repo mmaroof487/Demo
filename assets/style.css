@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.nav {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 700px;
+  color: white;
+}
+.logo {
+  width: 200px;
+  margin: 50px;
+}
+.nav > a {
+  display: inline-block;
+  width: 90%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  margin-bottom: 40px;
+  transition: 0.5s ease-in-out;
+}
+.nav a:last-child:hover {
+  background-color: rgb(86, 84, 84);
+  color: white;
+}
+.nav a:hover {
+  color: black;
+  background-color: white;
+}
+.me {
+  background-color: rgb(14, 65, 65);
+  width: 50%;
+  height: 700px;
+  text-align: center;
+  color: white;
+}
+.spanme {
+  margin: 20px;
+}
+.imgme {
+  width: 300px;
+  border-radius: 100%;
+  margin: 50px;
+}
+.pme {
+  margin: 50px;
+  text-align: left;
+}
+.pme p {
+  margin-bottom: 20px;
+}
+.work {
+  background-color: #fff;
+  display: inline;
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.projects {
+  width: 100%;
+}
+.resume {
+  background-color: rgb(89, 89, 255);
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  color: white;
+}
+#table {
+  width: 90%;
+  margin: auto;
+}
+td {
+  padding: 10px;
+  word-break: break-all;
+}
+tr:nth-child(even) {
+  background-color: white;
+  color: black;
+}
+#contact {
+  width: 50%;
+  display: inline-block;
+  background-color: rgb(114, 113, 113);
+  color: white;
+}
+#contact div {
+  text-align: center;
+  margin: auto;
+  margin: 100px;
+}
+#contact a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: medium;
+  margin: 20px;
+}
+.touch {
+  width: 50%;
+  display: inline-block;
+  background-color: rgb(0, 123, 123);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.getin {
+  width: 80%;
+}
+.message {
+  background-color: #fff;
+  color: black;
+  width: 80%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 10px;
+}
+.message input {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid;
+}
+.input {
+  width: 90%;
+  margin: 10px;
+}
+input[type="submit"] {
+  padding: 5px;
+  width: 90px;
+  background-color: rgb(0, 123, 123);
+  color: white;
+  float: right;
+  transition: 0.2s ease-in-out;
+}
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: rgb(0, 123, 123);
+}
+.copyrights {
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  text-align: right;
+  font-size: small;
+  padding: 20px 0;
+}
