@@ -5,6 +5,10 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+:root {
+  --box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
 main {
   width: 80%;
   margin: auto;
@@ -21,10 +25,15 @@ main {
   align-items: center;
   width: 50%;
   color: white;
+  box-shadow: var(--box-shadow);
 }
 .logo {
   width: 200px;
   margin: 50px;
+  transition: 0.3s ease-in-out;
+}
+.logo:hover {
+  width: 250px;
 }
 .nav > a {
   display: inline-block;
@@ -37,18 +46,19 @@ main {
   transition: 0.5s ease-in-out;
 }
 .nav a:last-child:hover {
-  background-color: rgb(86, 84, 84);
-  color: white;
+  background-color: white;
+  color: black;
 }
 .nav a:hover {
   color: black;
-  background-color: white;
+  background-color: cyan;
 }
 .me {
   background-color: rgb(14, 65, 65);
   width: 50%;
   text-align: center;
   color: white;
+  box-shadow: var(--box-shadow);
 }
 .spanme {
   margin: 20px;
@@ -71,24 +81,26 @@ main {
   width: 50%;
   float: left;
   text-align: center;
+  box-shadow: var(--box-shadow);
 }
 .projects {
   width: 100%;
 }
 .resume {
-  background-color: rgb(89, 89, 255);
+  background-color: cadetblue;
   display: inline-block;
   width: 50%;
   text-align: center;
   color: white;
+  box-shadow: var(--box-shadow);
 }
 table {
   width: 90%;
   margin: auto;
+  border-collapse: collapse;
 }
 td {
   padding: 10px;
-  word-break: break-all;
 }
 tr:nth-child(even) {
   background-color: white;
@@ -97,8 +109,9 @@ tr:nth-child(even) {
 #contact {
   width: 50%;
   display: inline-block;
-  background-color: rgb(114, 113, 113);
+  background-color: mediumseagreen;
   color: white;
+  box-shadow: var(--box-shadow);
 }
 #contact div {
   text-align: center;
@@ -112,15 +125,19 @@ tr:nth-child(even) {
   font-size: medium;
   margin: 20px;
 }
+#contact a:hover {
+  color: darkgreen;
+}
 .touch {
   width: 50%;
   display: inline-block;
-  background-color: rgb(0, 123, 123);
+  background-color: steelblue;
   color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  box-shadow: var(--box-shadow);
 }
 .getin {
   width: 80%;
@@ -134,7 +151,7 @@ tr:nth-child(even) {
   align-items: center;
   flex-wrap: wrap;
   padding: 10px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: var(--box-shadow);
   padding: 10px;
 }
 .message input {
@@ -146,17 +163,31 @@ tr:nth-child(even) {
   width: 90%;
   margin: 10px;
 }
+.input:hover input {
+  border-bottom: 1px solid steelblue;
+}
+.input:hover {
+  color: steelblue;
+}
+input:focus {
+  outline: 0;
+  border-bottom: 1px solid steelblue;
+}
+input:focus label {
+  color: rgb(0, 106, 255);
+}
 input[type="submit"] {
   padding: 5px;
   width: 90px;
-  background-color: rgb(0, 123, 123);
+  background-color: steelblue;
   color: white;
   float: right;
   transition: 0.2s ease-in-out;
 }
 input[type="submit"]:hover {
   background-color: #fff;
-  color: rgb(0, 123, 123);
+  color: steelblue;
+  border: 0;
 }
 .copyrights {
   background-color: black;
@@ -166,6 +197,7 @@ input[type="submit"]:hover {
   font-size: small;
   padding: 20px 5px;
 }
+
 @media (max-width: 1010px) {
   .imgme {
     margin: 0;
